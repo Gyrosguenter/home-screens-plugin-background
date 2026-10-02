@@ -21,11 +21,23 @@ Die Event-Zeiträume sind bewusst grobe, großzügige Datumsfenster (es gibt kei
 
 Kuratierte Auswahl kostenloser Fotos von [Unsplash](https://unsplash.com) (Unsplash-Lizenz, kein Unsplash+), direkt vom Unsplash-CDN geladen — es werden keine Bilddateien in diesem Repo mitgeliefert.
 
+| Situation | Fotograf |
+|---|---|
+| Herbst, Tag (Frauenkirche + Alpen) | Julian Ostarek |
+| Nacht (Olympiaturm) | Heliao |
+| Regen | James Harrison |
+| Winter / Schnee | Herr Bohn |
+| Christkindlmarkt, nachts (Marienplatz) | Luca |
+| Frühling (Kirschblüte) | Nk Ni |
+| Sommer (Englischer Garten) | Vinay Chavan |
+| Wiesn | Manoa Angelo |
+
 ## Konfiguration
 
 | Feld | Beschreibung |
 |---|---|
 | Münchner Events zeigen | Themenfotos zu Wiesn/Christkindlmarkt ein-/ausschalten (Standard: an) |
+| Abdunklung | 0–0,7, Standard 0,3 — dezenter Verlauf über dem Foto, damit Module darüber lesbar bleiben |
 
 ## Build & Deployment
 

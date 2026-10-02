@@ -1,7 +1,7 @@
 {
   "id": "muenchen-hintergrund",
   "name": "München Hintergrund",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Vollflächiges Hintergrundfoto, das sich automatisch an Tageszeit, Wetterlage, Jahreszeit und Münchner Events (z. B. Wiesn, Christkindlmarkt) anpasst",
   "author": "Gyrosguenter",
   "license": "MIT",
@@ -11,7 +11,8 @@
   "icon": "Image",
 
   "defaultConfig": {
-    "showEvents": true
+    "showEvents": true,
+    "dim": 0.3
   },
 
   "defaultSize": { "w": 2560, "h": 1440 },
@@ -30,6 +31,16 @@
         "title": "Münchner Events zeigen",
         "description": "Zu bestimmten Terminen (z. B. Wiesn, Christkindlmarkt) ein passendes Themenfoto statt des normalen Jahreszeit-Fotos zeigen.",
         "ui:widget": "toggle",
+        "ui:group": "Anzeige"
+      },
+      "dim": {
+        "type": "number",
+        "title": "Abdunklung",
+        "description": "Wie stark das Foto abgedunkelt wird, damit die Module darüber gut lesbar bleiben (0 = Originalfoto).",
+        "minimum": 0,
+        "maximum": 0.7,
+        "ui:widget": "slider",
+        "ui:step": 0.05,
         "ui:group": "Anzeige"
       }
     }
