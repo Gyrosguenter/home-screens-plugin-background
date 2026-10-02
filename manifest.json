@@ -1,0 +1,46 @@
+{
+  "id": "muenchen-hintergrund",
+  "name": "München Hintergrund",
+  "version": "1.0.0",
+  "description": "Vollflächiges Hintergrundfoto, das sich automatisch an Tageszeit, Wetterlage, Jahreszeit und Münchner Events (z. B. Wiesn, Christkindlmarkt) anpasst",
+  "author": "Gyrosguenter",
+  "license": "MIT",
+  "minAppVersion": "1.0.0",
+  "moduleType": "muenchen-hintergrund",
+  "category": "Media & Display",
+  "icon": "Image",
+
+  "defaultConfig": {
+    "showEvents": true
+  },
+
+  "defaultSize": { "w": 2560, "h": 1440 },
+
+  "defaultStyle": {
+    "padding": 0,
+    "fontSize": 16,
+    "backgroundColor": "transparent"
+  },
+
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "showEvents": {
+        "type": "boolean",
+        "title": "Münchner Events zeigen",
+        "description": "Zu bestimmten Terminen (z. B. Wiesn, Christkindlmarkt) ein passendes Themenfoto statt des normalen Jahreszeit-Fotos zeigen.",
+        "ui:widget": "toggle",
+        "ui:group": "Anzeige"
+      }
+    }
+  },
+
+  "exports": {
+    "component": "default"
+  },
+
+  "dataRequirements": [],
+  "prefetchUrl": null,
+  "permissions": ["network"],
+  "allowedDomains": ["api.open-meteo.com"]
+}
